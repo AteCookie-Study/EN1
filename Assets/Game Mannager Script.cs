@@ -10,6 +10,13 @@ public class GameMannagerScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        GameObject instance = Instantiate(\
+            playerPrefab,
+            new Vector3(0, 0, 0),
+            Quaternion.identity
+            );
+
+
         map = new int[,] {
 
             { 0, 0, 0, 0, 0 },
